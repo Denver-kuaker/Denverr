@@ -1,0 +1,288 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #F5F7FA;
+  color: #2D3748;
+  line-height: 1.6;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+/* ===== Presentación ===== */
+#presentacion {
+  height: 100vh;
+  background: linear-gradient(135deg, #0A66C2, #50E3C2);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.contenedor-presentacion {
+  max-width: 600px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid white;
+  margin-bottom: 20px;
+}
+
+.titulo-animado {
+  font-size: 2.5rem;
+  animation: tituloBounce 2s infinite;
+}
+
+.frase {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Animaciones */
+@keyframes tituloBounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* ===== Servicios ===== */
+#servicios {
+  padding: 40px 20px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contenedor-servicios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tarjeta-servicio {
+  background-color: #E4E7EB;
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta-servicio:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta-servicio h3 {
+  margin-bottom: 10px;
+  color: #0A66C2;
+}
+
+.tarjeta-servicio p {
+  font-size: 0.95rem;
+}
+
+/* ===== Contacto ===== */
+#contacto {
+  background-color: #f9f9f9;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.redes-sociales {
+  margin-bottom: 30px;
+}
+
+.redes-sociales a {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px 20px;
+  background-color: #0A66C2;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.redes-sociales a:hover {
+  background-color: #004182;
+}
+
+.formulario-contacto {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  resize: vertical;
+}
+
+.formulario-contacto button {
+  background-color: #0A66C2;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #004182;
+  transform: translateY(-2px);
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  margin: 40px 0 20px;
+  color: #888;
+
+}
+
+/* ===== Navegación ===== */
+nav {
+  background-color: #0A66C2;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #004182;
+}
+
+/* ===== Alimentos Favoritos ===== */
+#alimentos {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#alimentos ul {
+  list-style: disc;
+  margin: 20px auto;
+  padding-left: 40px;
+  max-width: 300px;
+  text-align: left;
+}
+
+/* ===== Logros ===== */
+#logros {
+  background-color: #f0f4f8;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#logros label {
+  display: block;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #0A66C2;
+}
+
+progress {
+  width: 80%;
+  height: 20px;
+  margin-top: 5px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: #e0e0e0;
+  border-radius: 10px;
+}
+
+progress::-webkit-progress-value {
+  background-color: #0A66C2;
+  border-radius: 10px;
+}
+
+/* ===== Más Acerca de Mí ===== */
+#acerca {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+details {
+  background-color: #f1f5f9;
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+summary {
+  font-weight: bold;
+  color: #0A66C2;
+  margin-bottom: 10px;
+}
+/* ===== Intro Web Design: Animación CSS de ejemplo ===== */
+#animacion-css {
+  background-color: #ffffff;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+#animacion-css p {
+  margin-bottom: 20px;
+}
+
+.rebote {
+  width: 100px;
+  height: 100px;
+  background-color: #0A66C2;
+  margin: auto;
+  border-radius: 50%;
+  animation: rebotar 2s infinite;
+}
+
+@keyframes rebotar {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}
+
